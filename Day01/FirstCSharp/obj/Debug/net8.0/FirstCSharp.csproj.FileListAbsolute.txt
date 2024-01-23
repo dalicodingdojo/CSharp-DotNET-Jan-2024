@@ -1,0 +1,15 @@
+C:\Users\acade\OneDrive\Desktop\gitRepos\PixelPioneers\03-csharp\CSharp-DotNET-Jan-2024\Day01\FirstCSharp\bin\Debug\net8.0\FirstCSharp.exe
+C:\Users\acade\OneDrive\Desktop\gitRepos\PixelPioneers\03-csharp\CSharp-DotNET-Jan-2024\Day01\FirstCSharp\bin\Debug\net8.0\FirstCSharp.deps.json
+C:\Users\acade\OneDrive\Desktop\gitRepos\PixelPioneers\03-csharp\CSharp-DotNET-Jan-2024\Day01\FirstCSharp\bin\Debug\net8.0\FirstCSharp.runtimeconfig.json
+C:\Users\acade\OneDrive\Desktop\gitRepos\PixelPioneers\03-csharp\CSharp-DotNET-Jan-2024\Day01\FirstCSharp\bin\Debug\net8.0\FirstCSharp.dll
+C:\Users\acade\OneDrive\Desktop\gitRepos\PixelPioneers\03-csharp\CSharp-DotNET-Jan-2024\Day01\FirstCSharp\bin\Debug\net8.0\FirstCSharp.pdb
+C:\Users\acade\OneDrive\Desktop\gitRepos\PixelPioneers\03-csharp\CSharp-DotNET-Jan-2024\Day01\FirstCSharp\obj\Debug\net8.0\FirstCSharp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\acade\OneDrive\Desktop\gitRepos\PixelPioneers\03-csharp\CSharp-DotNET-Jan-2024\Day01\FirstCSharp\obj\Debug\net8.0\FirstCSharp.AssemblyInfoInputs.cache
+C:\Users\acade\OneDrive\Desktop\gitRepos\PixelPioneers\03-csharp\CSharp-DotNET-Jan-2024\Day01\FirstCSharp\obj\Debug\net8.0\FirstCSharp.AssemblyInfo.cs
+C:\Users\acade\OneDrive\Desktop\gitRepos\PixelPioneers\03-csharp\CSharp-DotNET-Jan-2024\Day01\FirstCSharp\obj\Debug\net8.0\FirstCSharp.csproj.CoreCompileInputs.cache
+C:\Users\acade\OneDrive\Desktop\gitRepos\PixelPioneers\03-csharp\CSharp-DotNET-Jan-2024\Day01\FirstCSharp\obj\Debug\net8.0\FirstCSharp.sourcelink.json
+C:\Users\acade\OneDrive\Desktop\gitRepos\PixelPioneers\03-csharp\CSharp-DotNET-Jan-2024\Day01\FirstCSharp\obj\Debug\net8.0\FirstCSharp.dll
+C:\Users\acade\OneDrive\Desktop\gitRepos\PixelPioneers\03-csharp\CSharp-DotNET-Jan-2024\Day01\FirstCSharp\obj\Debug\net8.0\refint\FirstCSharp.dll
+C:\Users\acade\OneDrive\Desktop\gitRepos\PixelPioneers\03-csharp\CSharp-DotNET-Jan-2024\Day01\FirstCSharp\obj\Debug\net8.0\FirstCSharp.pdb
+C:\Users\acade\OneDrive\Desktop\gitRepos\PixelPioneers\03-csharp\CSharp-DotNET-Jan-2024\Day01\FirstCSharp\obj\Debug\net8.0\FirstCSharp.genruntimeconfig.cache
+C:\Users\acade\OneDrive\Desktop\gitRepos\PixelPioneers\03-csharp\CSharp-DotNET-Jan-2024\Day01\FirstCSharp\obj\Debug\net8.0\ref\FirstCSharp.dll
