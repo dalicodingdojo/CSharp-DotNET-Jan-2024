@@ -169,6 +169,7 @@ static string SayHello(string name)
 {
     return $"Hello {name}, Happy to have you here.";
 }
+
 static List<int> FirstFiveMultiples(int number)
 {
     List<int> result = new();
@@ -177,6 +178,7 @@ static List<int> FirstFiveMultiples(int number)
     }
     return result;
 }
+
 static void PrintResult(List<int> inputList){
     foreach(int i in inputList){
         System.Console.WriteLine($"Number is {i}");
