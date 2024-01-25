@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index</title>
+</head>
+<body>
+    
+    <h1>Index View 🔥🥳🎉🎊</h1>
+    <a href="/dashboard">Go-Back</a>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus, omnis!</p>
+    <h4>
+        Username : @ViewBag.Username <br>
+        Age : @ViewBag.Age
+    </h4>
+    @{
+        for(var i = 0; i< ViewBag.Age; i++)
+        {
+            if(i%2 == 0)
+            {
+                <h5>This Number is even  :  @i</h5>
+            }
+        }
+    }
+</body>
+</html>

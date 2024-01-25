@@ -35,6 +35,39 @@ class SLL {
             return this
         }
     }
+    removeAtFront(){
+        if(this.isEmpty()){
+            return false
+        }else {
+            this.head = this.head.next
+            return this
+        }
+    }
+    print(){
+        if(this.isEmpty()){
+            return false
+        }else{
+            let runner = this.head
+            while(runner){
+                console.log(runner.data);
+                runner  =  runner.next
+            }
+        }
+    }
+    contains(value){
+        if(this.isEmpty()){
+            return false
+        }else{
+            let runner = this.head
+            while(runner){
+                if(runner.data == value){
+                    return true
+                }
+                runner  =  runner.next
+            }
+            return false
+        }
+    }
 }
 
 class Node {
@@ -61,4 +94,9 @@ nodeThree.next = nodeFour
 // console.log(nodeOne);
 // console.log(nodeTwo);
 // console.log(nodeThree);
-console.log(nodeThree.next);
+sll.print();
+sll.removeAtFront()
+console.log("--------------------------");
+sll.print();
+console.log("Contains  2 -> ",sll.contains(2));
+console.log("Contains  5 -> ",sll.contains(5));

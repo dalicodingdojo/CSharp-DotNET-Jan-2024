@@ -1,0 +1,29 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\acade\\OneDrive\\Desktop\\gitRepos\\PixelPioneers\\03-csharp\\CSharp-DotNET-Jan-2024\\Day03\\FirstWebApp\\wwwroot\\css\\style.css",
+      "PackagePath": "staticwebassets\\css\\style.css"
+    },
+    {
+      "Id": "C:\\Users\\acade\\OneDrive\\Desktop\\gitRepos\\PixelPioneers\\03-csharp\\CSharp-DotNET-Jan-2024\\Day03\\FirstWebApp\\wwwroot\\img\\CSharp2.png",
+      "PackagePath": "staticwebassets\\img\\CSharp2.png"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.FirstWebApp.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.FirstWebApp.props",
+      "PackagePath": "build\\FirstWebApp.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.FirstWebApp.props",
+      "PackagePath": "buildMultiTargeting\\FirstWebApp.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.FirstWebApp.props",
+      "PackagePath": "buildTransitive\\FirstWebApp.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
