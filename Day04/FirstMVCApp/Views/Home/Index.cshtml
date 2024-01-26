@@ -1,0 +1,62 @@
+﻿@model Song
+
+<div class="text-center">
+    <h1 class="display-4">🎶Add Your Favorite Song🎶</h1>
+    <div class="card shadow p-3">
+        <div class="card-head text-danger text-center h4">
+            Old From Version
+        </div>
+        <form action="/create/v0/songs" class="card-body" method="post">
+            <div class="form-group mb-3">
+                <label for="">Title</label>
+                <input type="text" class="form-control" name="title">
+            </div>
+            <div class="form-group mb-3">
+                <label for="">Singer</label>
+                <input type="text" class="form-control" name="singer">
+            </div>
+            <div class="form-group mb-3">
+                <label for="">Rlease Year</label>
+                <input type="number" class="form-control" name="releaseYear">
+            </div>
+            <div class="form-group mb-3">
+                <label for="" class="form-check-label">Is Explicit ?</label>
+                <input type="checkbox" name="isExplicit">
+            </div>
+            <div class="text-end">
+                <button class="btn btn-dark w-50">Submit</button>
+            </div>
+        </form>
+    </div>
+    <hr>
+    <div class="card shadow p-3">
+        <div class="card-head text-primary text-center h4">
+            ASP.NET Form Version
+        </div>
+        <form asp-controller="Home" asp-action="CreateSongV1" class="card-body" method="post">
+            <div class="form-group mb-3">
+                <label asp-for="Title"></label>
+                <input class="form-control" asp-for="Title">
+                <span asp-validation-for="Title" class="text-danger"></span>
+            </div>
+            <div class="form-group mb-3">
+                <label asp-for="Singer"></label>
+                <input class="form-control" asp-for="Singer">
+                <span asp-validation-for="Singer" class="text-danger"></span>
+            </div>
+            <div class="form-group mb-3">
+                <label asp-for="ReleaseYear"></label>
+                <input asp-for="ReleaseYear" class="form-control">
+                <span asp-validation-for="ReleaseYear" class="text-danger"></span>
+
+            </div>
+            <div class="form-group mb-3">
+                <label asp-for="IsExplicit" class="form-check-label">Is Explicit ?</label>
+                <input asp-for="IsExplicit">
+            </div>
+            <div class="text-end">
+                <button class="btn btn-primary w-50">Submit</button>
+            </div>
+        </form>
+    </div>
+</div>

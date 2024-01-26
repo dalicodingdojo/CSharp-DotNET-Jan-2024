@@ -1,0 +1,33 @@
+﻿@model List<Song>
+<div class="text-center">
+    <h1 class="display-4">🎶All Songs List🎶</h1>
+    @{
+        foreach (Song song in Model)
+        {
+            <div class="card shadow p-3 mb-3">
+                <div class="card-body" >
+                    <div class="mb-3">
+                        <h4>Title : @song.Title</h4>
+                    </div>
+                    <div class="mb-3">
+                        <h4>Singer : @song.Singer</h4>
+                    </div>
+                    <div class="mb-3">
+                        <h4>Release Year : @song.ReleaseYear</h4>
+                    </div>
+                    <div class="mb-3">
+                        <h4>Is Explicit : @song.IsExplicit</h4>
+                    </div>
+                    <div class="mb-3">
+                        <h4>Is Explicit ? @{ if(song.IsExplicit){
+                            <span>Yes 😡🤬</span>
+                            } else{
+                                <span>😇👼🏼🪽</span>
+                            }
+                            }</h4>
+                    </div>
+                </div>
+            </div>
+        }
+    }
+</div>
