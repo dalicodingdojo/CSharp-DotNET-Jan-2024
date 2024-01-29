@@ -1,0 +1,35 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">🤡😶‍🌫️ Session Lecture 🤡😶‍🌫️</h1>
+    <br>
+    <h2>Number of Users : @Context.Session.GetInt32("usersCount")</h2>
+    <div class="card shadow mb-3">
+        <div class="card-body">
+            <div class="card-text h4">Username : @Context.Session.GetString("username")</div>
+            <div class="card-text h4">Age : @Context.Session.GetInt32("age")</div>
+        </div>
+    </div>
+    <div class="card shadow mb-3">
+        <div class="card-head"> 👼🏼 Session Form 👼🏼 </div>
+        <div class="card-body">
+            <form action="/users/create" method="post">
+                <div class="form-group mb-3">
+                    <label for="">Username</label>
+                    <input type="text" class="form-control" name="username">
+                </div>
+                <div class="form-group mb-3">
+                    <label for="">Age</label>
+                    <input type="number" class="form-control" name="age">
+                </div>
+                <div class="form-group mb-3">
+                    <label for="">Favorite Sport</label>
+                    <input type="text" class="form-control" name="favSport">
+                </div>
+                <button class="btn btn-primary w-50">Submit</button>
+            </form>
+        </div>
+    </div>
+</div>

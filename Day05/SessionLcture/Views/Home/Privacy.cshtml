@@ -1,0 +1,15 @@
+﻿<div class="d-flex justify-content-between mb-3">
+    <h1>Display Result</h1>
+    <a class="btn btn-danger" asp-action="Logout" asp-controller="Home">Logout</a>
+</div>
+<h2>Number of Users : @Context.Session.GetInt32("usersCount")</h2>
+<div class="text-center">
+    <h1 class="display-4">😇 Last Submitted User 😇</h1>
+    <div class="card shadow mb-3">
+        <div class="card-body">
+            <div class="card-text h4">Username : @Context.Session.GetString("username")</div>
+            <div class="card-text h4">Age : @Context.Session.GetInt32("age")</div>
+            <div class="card-text h4">Favorite Sport : @Context.Session.GetString("favSport")</div>
+        </div>
+    </div>
+</div>
