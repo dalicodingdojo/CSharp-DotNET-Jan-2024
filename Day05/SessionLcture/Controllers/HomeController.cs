@@ -28,6 +28,7 @@ public class HomeController : Controller
 
     public IActionResult Privacy()
     {
+        string name  = HttpContext.Session.GetString("username");
         return View();
     }
     [HttpPost("users/create")]
