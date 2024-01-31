@@ -1,0 +1,32 @@
+﻿@{
+    ViewData["Title"] = "Privacy Policy";
+}
+@model List<Album>
+<div class="container p-3 mt-5">
+    <div class="d-flex align-items-center justify-content-around flex-wrap gap-3">
+        @{
+            foreach (Album album in Model)
+            {
+                <div class="card border-primary p-2 gap-2" style="width: 18rem;">
+                    <div class="card-head h4 fst-italic text-center text-primary">
+                        @album.Artist
+                    </div>
+                    <img src="@album.PosterUrl" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between mb-3">
+                            <h6>@album.Title</h6>
+                            <h5 class="text-warning">@album.ReleaseYear</h5>
+                        </div>
+                        <div class="d-flex justify-content-between">
+                            <button class="btn btn-success"><i class="bi bi-binoculars"></i></button>
+                            <a class="btn btn-warning" asp-action="Edit" asp-route-albumId = "@album.AlbumId"><i class="bi bi-gear"></i></a>
+                            <form asp-action="DeleteAlbum" asp-route-albumId="@album.AlbumId" method="post">
+                                <button class="btn btn-danger"><i class="bi bi-trash3"></i></button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            }
+        }
+    </div>
+</div>
