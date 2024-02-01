@@ -59,6 +59,7 @@ public class HomeController : Controller
         {
             // 1- Update
             Album album = _db.Albums.FirstOrDefault(x => x.AlbumId == albumToUpdate.AlbumId);
+            // Mapping
             album.Title = albumToUpdate.Title;
             album.Artist = albumToUpdate.Artist;
             album.ReleaseYear = albumToUpdate.ReleaseYear;

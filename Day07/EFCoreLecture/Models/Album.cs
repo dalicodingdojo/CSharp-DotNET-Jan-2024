@@ -28,6 +28,9 @@ public class Album
     [Required(ErrorMessage = "Please Provide Album Poster.")]
     [Display(Name = "Poster Image Url")]
     public string PosterUrl { get; set; }
+    // [Required(ErrorMessage = "Please Provide Album Poster.")]
+    // [Display(Name = "Charted On Billboard")]
+    // public bool ChartedOnBillBoard { get; set; }
     //___________________________________
     public DateTime CreatedAt { get; set; } = DateTime.Now;
     //___________________________________

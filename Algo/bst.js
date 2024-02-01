@@ -69,6 +69,25 @@ class BST {
             }
         }
     }
+    find(value){
+        if(this.isEmpty()){
+            return false
+        }else{
+            let runner = this.root
+            while(runner){
+                if(runner.data == value){
+                    return true
+                }else{
+                    if(runner.data < value){
+                        runner = runner.right
+                    }else{
+                        runner = runner.left
+                    }
+                }
+            }
+            return false
+        }
+    }
 }
 
 // const nodeOne  = new Node(26)
@@ -95,5 +114,7 @@ const bst = new BST();
 // bst.root = nodeOne;
 bst.insert(26).insert(12).insert(62).insert(11).insert(19)
 console.log("BST : ", bst);
-console.log("Min BST = ", bst.min());
-console.log("Max BST = ", bst.max());
+// console.log("Min BST = ", bst.min());
+// console.log("Max BST = ", bst.max());
+console.log("Find 20 = ", bst.find(20));
+console.log("Find 62 = ", bst.find(62));
