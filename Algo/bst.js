@@ -69,23 +69,65 @@ class BST {
             }
         }
     }
-    find(value){
-        if(this.isEmpty()){
+    find(value) {
+        if (this.isEmpty()) {
             return false
-        }else{
+        } else {
             let runner = this.root
-            while(runner){
-                if(runner.data == value){
+            while (runner) {
+                if (runner.data == value) {
                     return true
-                }else{
-                    if(runner.data < value){
+                } else {
+                    if (runner.data < value) {
                         runner = runner.right
-                    }else{
+                    } else {
                         runner = runner.left
                     }
                 }
             }
             return false
+        }
+    }
+    removeMinValue() {
+        if (this.isEmpty()) {
+            return false
+        } else {
+            let runner = this.root;
+            if (runner.left == null) {
+                this.root = runner.right
+                return this
+            } else {
+                while (runner.left) {
+                    if (runner.left.left == null) {
+                        runner.left = null
+                        return this
+                    } else {
+                        runner = runner.left
+                    }
+                }
+                return this
+            }
+        }
+    }
+    removeMaxValue() {
+        if (this.isEmpty()) {
+            return false
+        } else {
+            let runner = this.root;
+            if (runner.right == null) {
+                this.root = runner.left
+                return this
+            } else {
+                while (runner.right) {
+                    if (runner.right.right == null) {
+                        runner.right = null
+                        return this
+                    } else {
+                        runner = runner.right
+                    }
+                }
+                return this
+            }
         }
     }
 }
@@ -113,8 +155,15 @@ class BST {
 const bst = new BST();
 // bst.root = nodeOne;
 bst.insert(26).insert(12).insert(62).insert(11).insert(19)
-console.log("BST : ", bst);
+// console.log("BST : ", bst);
 // console.log("Min BST = ", bst.min());
 // console.log("Max BST = ", bst.max());
-console.log("Find 20 = ", bst.find(20));
-console.log("Find 62 = ", bst.find(62));
+// console.log("Find 20 = ", bst.find(20));
+// console.log("Find 62 = ", bst.find(62));
+console.log("Find 11 Before Remove  = ", bst.find(11));
+bst.removeMinValue();
+console.log("Find 11 After Remove = ", bst.find(11));
+console.log('---------------------------------------------');
+console.log("Find 62 Before Remove  = ", bst.find(62));
+bst.removeMaxValue();
+console.log("Find 62 After Remove = ", bst.find(62));

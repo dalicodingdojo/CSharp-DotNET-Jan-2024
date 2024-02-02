@@ -1,7 +1,7 @@
 #pragma warning disable CS8618
 using System.ComponentModel.DataAnnotations;
 
-namespace EFCoreLecture.Models;
+namespace Songify.Models;
 
 public class Album
 {
@@ -28,11 +28,13 @@ public class Album
     [Required(ErrorMessage = "Please Provide Album Poster.")]
     [Display(Name = "Poster Image Url")]
     public string PosterUrl { get; set; }
-    // [Required(ErrorMessage = "Please Provide Album Poster.")]
-    // [Display(Name = "Charted On Billboard")]
-    // public bool ChartedOnBillBoard { get; set; }
     //___________________________________
     public DateTime CreatedAt { get; set; } = DateTime.Now;
     //___________________________________
     public DateTime UpdatedAt { get; set; } = DateTime.Now;
+    // *********************************************************************
+    // ! RelationShip : One User can have many Albums and One Album can belong to only one single user (OTM)
+    public int UserId { get; set; }
+    // Navigation property
+    public User? User { get; set; }
 }

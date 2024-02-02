@@ -1,0 +1,29 @@
+﻿@{
+    ViewData["Title"] = "Dashboard";
+}
+@await Html.PartialAsync("_Navbar")
+@model List<Album>
+<div class="container p-3 mt-5">
+    <div class="d-flex align-items-center justify-content-around flex-wrap gap-3">
+        @{
+            foreach (Album album in Model)
+            {
+                <div class="card border-primary p-2 gap-2" style="width: 18rem;">
+                    <div class="card-head h4 fst-italic text-center text-primary">
+                        @album.Artist
+                    </div>
+                    <img src="@album.PosterUrl" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between mb-3">
+                            <h6>@album.Title</h6>
+                            <h5 class="text-warning">@album.ReleaseYear</h5>
+                        </div>
+                        <div>
+                            <h5 class="fst-italic text-info">Posted By: @album.User.Username</h5>
+                        </div>
+                    </div>
+                </div>
+            }
+        }
+    </div>
+</div>

@@ -1,7 +1,7 @@
 #pragma warning disable CS8618
 using System.ComponentModel.DataAnnotations;
 
-namespace LogRegApp.Models;
+namespace Songify.Models;
 
 public class LoginUser
 {

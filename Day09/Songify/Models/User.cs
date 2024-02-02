@@ -2,7 +2,7 @@
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace LogRegApp.Models;
+namespace Songify.Models;
 
 public class User
 {
@@ -45,4 +45,7 @@ public class User
 
     // Updated At
     public DateTime UpdatedAt { get; set; } = DateTime.Now;
+    // **************************************************************
+    // ! Navigation Property
+    public List<Album> MyFavoriteAlbums { get; set; } = new();
 }

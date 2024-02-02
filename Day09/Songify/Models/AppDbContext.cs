@@ -2,7 +2,7 @@
 
 using Microsoft.EntityFrameworkCore;
 
-namespace LogRegApp.Models;
+namespace Songify.Models;
 
 
 public class AppDbContext : DbContext
@@ -11,4 +11,5 @@ public class AppDbContext : DbContext
 
     // Our Database Tables 
     public DbSet<User> Users { get; set; }
+    public DbSet<Album> Albums { get; set; }
 }
