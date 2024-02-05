@@ -1,0 +1,40 @@
+@{
+    ViewData["Title"] = "One Album";
+}
+@model Album
+@await Html.PartialAsync("_Navbar")
+<div class="container">
+    <h1 class="display-4 text-primary text-center">One Album</h1>
+    <div class="d-flex justify-content-between">
+        <div class="card border-primary p-2 gap-2" style="width: 32rem;">
+            <div class="card-head h4 fst-italic text-center text-primary">
+                @Model.Artist
+            </div>
+            <img src="@Model.PosterUrl" class="card-img-top" alt="...">
+            <div class="card-body">
+                <div class="d-flex justify-content-between mb-3">
+                    <h6>@Model.Title</h6>
+                    <h5 class="text-warning">@Model.ReleaseYear</h5>
+                </div>
+                <div>
+                    @* <h5 class="fst-italic text-info">Posted By: @album.User.Username</h5> *@
+                </div>
+            </div>
+        </div>
+        <div class="card border-warning p-2 gap-2" style="width: 32rem;">
+            <div class="card-head h4 fst-italic text-center text-primary">
+                Liked By
+            </div>
+            <div class="card-body">
+                @{
+                    foreach(Like like in Model.AlbumLikes)
+                    {
+                        <h3 class="fst-italic text-warning">@like.User.Username</h3>
+                    }
+                }
+                    
+            </div>
+        </div>
+    </div>
+
+</div>
